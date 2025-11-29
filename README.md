@@ -33,4 +33,36 @@ Siga os passos abaixo para configurar o banco de dados e executar os scripts.
 ### Passo a Passo
 
 1.  **Clone o Repositório:**
-1.  **Rode os script SQL em sua máquina**    
+    git clone https://github.com/Renan/BiblioTechDB.git
+
+2.  **Conecte-se ao MySQL Workbench:**
+    *   Abra o MySQL Workbench.
+    *   Crie ou use uma conexão existente para o seu servidor MySQL.
+
+3.  **Execute o Script de Criação das Tabelas:**
+    *   No MySQL Workbench, abra o arquivo `V001__criar_tabelas.sql`.
+    *   Execute todo o script (clique no ícone de raio). Isso criará o banco de dados `BiblioTechDB` e todas as suas tabelas.
+    *   Após a execução, clique com o botão direito sobre a seção `SCHEMAS` no painel Navigator e selecione `Refresh All` para ver o novo banco de dados.
+
+4.  **Povoar o Banco de Dados com Dados de Exemplo:**
+    *   Abra o arquivo `V002__inserir_dados.sql` no MySQL Workbench.
+    *   Execute todo o script. Isso inserirá dados de exemplo em todas as tabelas, respeitando as dependências de chaves estrangeiras.
+
+5.  **Executar Consultas (SELECT):**
+    *   Abra o arquivo `V003__consultas.sql` no MySQL Workbench.
+    *   Execute cada consulta individualmente para ver os resultados e entender como os dados são recuperados.
+
+6.  **Executar Atualizações e Exclusões (UPDATE e DELETE)::**
+    *   Abra o arquivo `V004__atualizacoes_deletar.sql` no MySQL Workbench.
+    *   **ATENÇÃO:** Execute os comandos `UPDATE` e `DELETE` com cautela, um por um, e observe os resultados. Eles modificam e removem dados. O script inclui comentários explicando cada operação.
+
+## 📊 Diagrama Entidade-Relacionamento (DER)
+
+O diagrama lógico do banco de dados `BiblioTechDB` pode ser gerado diretamente no MySQL Workbench através da função de Engenharia Reversa (`Database > Reverse Engineer...`) após a criação das tabelas.
+
+![DER_BiblioTechDB](docs/DER_BiblioTechDB.png)
+
+## 🤝 Contribuição
+
+Sinta-se à vontade para explorar, testar e sugerir melhorias.
+
