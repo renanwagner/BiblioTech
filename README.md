@@ -1,2 +1,36 @@
-# BiblioTech
-BiblioTechDB - Sistema de Gestão de Biblioteca Universitária
+# BiblioTechDB - Sistema de Gestão de Biblioteca Universitária
+
+Este repositório contém os scripts SQL para a criação e manipulação do banco de dados do Sistema de Gestão de Biblioteca Universitária (BiblioTech), desenvolvido como parte da disciplina de Modelagem de Banco de Dados.
+
+## 📚 Visão Geral do Projeto
+
+O BiblioTechDB é um sistema de banco de dados relacional projetado para gerenciar o acervo de uma biblioteca universitária, controlando usuários (alunos, professores, funcionários), itens do acervo (livros físicos, e-books, periódicos, teses), empréstimos, reservas, multas e notificações. O modelo foi normalizado até a 3ª Forma Normal para garantir a integridade e eficiência dos dados.
+
+## ✨ Funcionalidades Principais
+
+-   **Gestão de Usuários:** Cadastro e controle de diferentes perfis (Aluno, Professor, Funcionário).
+-   **Gestão de Acervo:** Catalogação detalhada de diversos tipos de materiais.
+-   **Empréstimos e Devoluções:** Controle completo do ciclo de empréstimos, incluindo renovações e prazos.
+-   **Sistema de Reservas:** Fila de espera para itens indisponíveis e notificações automáticas.
+-   **Controle de Multas e Bloqueios:** Cálculo automático de multas por atraso e bloqueio de usuários inadimplentes.
+-   **Relatórios:** Base para geração de relatórios gerenciais sobre o uso da biblioteca.
+
+## 🛠️ Tecnologias Utilizadas
+
+-   **Sistema de Gerenciamento de Banco de Dados (SGBD):** MySQL 8.x (os scripts são compatíveis com PostgreSQL com pequenas adaptações para `AUTO_INCREMENT` para `SERIAL`).
+-   **Ferramenta de Desenvolvimento:** MySQL Workbench (recomendado para execução dos scripts e visualização do DER).
+-   **Versionamento de Código:** Git / GitHub.
+
+## 🚀 Como Configurar e Executar o Projeto
+
+Siga os passos abaixo para configurar o banco de dados e executar os scripts.
+
+### Pré-requisitos
+
+1.  **MySQL Server:** Certifique-se de ter o MySQL Server (versão 8.x ou superior) instalado e em execução.
+2.  **MySQL Workbench:** Instale o MySQL Workbench para facilitar a conexão, execução de scripts e visualização do DER.
+
+### Passo a Passo
+
+1.  **Clone o Repositório:**
+1.  **Rode os script SQL em sua máquina**    
